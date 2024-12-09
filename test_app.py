@@ -21,7 +21,7 @@ def test_add_item(client):
     assert b'Milk' in response.data
 
 def test_delete_item(client):
-    # Először adjunk hozzá egy elemet
+
     client.post('/add', data={'item': 'Bread'}, follow_redirects=True)
 
     response = client.get('/delete/Bread', follow_redirects=True)
