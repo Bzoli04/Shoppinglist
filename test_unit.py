@@ -48,11 +48,11 @@ def test_delete_nonexistent_item_unit():
     shopping_list.append("tej")
 
 
-    item = "tojás"
+    item = "tojas"
     if item in shopping_list:
         shopping_list.remove(item)
 
 
     assert len(shopping_list) == 1
     assert "tej" in shopping_list
-    assert "tojás" not in shopping_list
+    assert "tojas" not in shopping_list
